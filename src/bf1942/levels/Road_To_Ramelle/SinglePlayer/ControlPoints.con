@@ -1,0 +1,35 @@
+rem
+rem ***  ***
+rem
+Object.create town_square
+Object.absolutePosition 1085.03/76.0957/1681.1
+rem
+rem ***  ***
+rem
+Object.create alliedbase
+Object.absolutePosition 1265.91/72.3/622.99
+rem
+rem ***  ***
+rem
+Object.create the_alamo
+Object.absolutePosition 1036.75/75.89/1290.1
+rem
+rem ***  ***
+rem
+Object.create ramelle_park
+Object.absolutePosition 1201.98/75.71/1514.01
+rem
+rem ***  ***
+rem
+Object.create mg_nest
+Object.absolutePosition 1262.22/92.82/982.35
+rem
+rem ***  ***
+rem
+Object.create out_skirts
+Object.absolutePosition 624.99/76.63/1667.16
+rem
+rem ***  ***
+rem
+Object.create rail_yard
+Object.absolutePosition 1331.77/75.71/1329.66

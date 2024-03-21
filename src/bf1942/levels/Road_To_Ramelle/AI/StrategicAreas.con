@@ -1,0 +1,136 @@
+rem *** Create strategic areas ***
+
+aiStrategicArea.create Church 1078/1674 1085/1681 100
+
+aiStrategicArea.create OutSkirts 612/1654 625/1667 100
+
+aiStrategicArea.create RamellePark 1189/1501 1202/1514 100
+
+aiStrategicArea.create TheAlamo 1033/1285 1039/1292 120
+
+aiStrategicArea.create RailYard 1325/1326 1331/1332 120
+
+aiStrategicArea.create Barn 1242/977 1262/992 120
+
+aiStrategicArea.create AlliedBase 1268/536 1341/584 40
+
+aiStrategicArea.create MGNest 1242/908 1261/923 50
+
+aiStrategicArea.create nebel01 724/1579 727/1585 50
+
+aiStrategicArea.create mg2 1199/1457 1202/1461 70
+
+aiStrategicArea.create mg3 918/1702 921/1706 50
+
+
+aiStrategicArea.setActive Church
+AIStrategicArea.addNeighbour mg3
+AIStrategicArea.addNeighbour Barn
+AIStrategicArea.addNeighbour OutSkirts
+AIStrategicArea.addNeighbour TheAlamo
+AIStrategicArea.addNeighbour RamellePark
+AIStrategicArea.addNeighbour nebel01
+AIStrategicArea.setOrderPosition Tank 1084/1661
+AIStrategicArea.setOrderPosition Infantry 1089/1675
+aiStrategicArea.addObjectTypeFlag ControlPoint
+aiStrategicArea.addObjectTypeFlag LandSpawner
+aiStrategicArea.setSide 1
+
+aiStrategicArea.setActive OutSkirts
+AIStrategicArea.addNeighbour Barn
+AIStrategicArea.addNeighbour TheAlamo
+AIStrategicArea.addNeighbour RailYard
+AIStrategicArea.addNeighbour mg3
+AIStrategicArea.addNeighbour Church
+AIStrategicArea.addNeighbour RamellePark
+AIStrategicArea.addNeighbour nebel01
+AIStrategicArea.setOrderPosition Tank 633/1665
+AIStrategicArea.setOrderPosition Infantry 633/1665
+aiStrategicArea.addObjectTypeFlag ControlPoint
+aiStrategicArea.addObjectTypeFlag LandSpawner
+aiStrategicArea.addObjectTypeFlag Base
+aiStrategicArea.addObjectTypeFlag North
+aiStrategicArea.setSide 1
+
+aiStrategicArea.setActive RamellePark
+AIStrategicArea.addNeighbour mg2
+AIStrategicArea.addNeighbour Barn
+AIStrategicArea.addNeighbour Church
+AIStrategicArea.addNeighbour OutSkirts
+AIStrategicArea.addNeighbour TheAlamo
+AIStrategicArea.addNeighbour RailYard
+AIStrategicArea.setOrderPosition Tank 1205/1557
+AIStrategicArea.setOrderPosition Infantry 1193/1499
+aiStrategicArea.addObjectTypeFlag ControlPoint
+aiStrategicArea.setSide 1
+
+aiStrategicArea.setActive TheAlamo
+AIStrategicArea.addNeighbour OutSkirts
+AIStrategicArea.addNeighbour Church
+AIStrategicArea.addNeighbour RamellePark
+AIStrategicArea.addNeighbour RailYard
+AIStrategicArea.addNeighbour Barn
+AIStrategicArea.setOrderPosition Tank 1044/1290
+AIStrategicArea.setOrderPosition Infantry 1044/1290
+aiStrategicArea.addObjectTypeFlag ControlPoint
+aiStrategicArea.addObjectTypeFlag LandSpawner
+aiStrategicArea.addObjectTypeFlag West
+aiStrategicArea.setSide 1
+
+aiStrategicArea.setActive RailYard
+AIStrategicArea.addNeighbour OutSkirts
+AIStrategicArea.addNeighbour RamellePark
+AIStrategicArea.addNeighbour TheAlamo
+AIStrategicArea.addNeighbour Barn
+AIStrategicArea.setOrderPosition Tank 1336/1325
+AIStrategicArea.setOrderPosition Infantry 1336/1325
+aiStrategicArea.addObjectTypeFlag ControlPoint
+aiStrategicArea.addObjectTypeFlag West
+aiStrategicArea.setSide 1
+
+aiStrategicArea.setActive Barn
+AIStrategicArea.addNeighbour OutSkirts
+AIStrategicArea.addNeighbour Church
+AIStrategicArea.addNeighbour RamellePark
+AIStrategicArea.addNeighbour TheAlamo
+AIStrategicArea.addNeighbour RailYard
+AIStrategicArea.addNeighbour MGNest
+AIStrategicArea.addNeighbour AlliedBase
+AIStrategicArea.setOrderPosition Tank 1261/1004
+AIStrategicArea.setOrderPosition Infantry 1262/993
+aiStrategicArea.addObjectTypeFlag ControlPoint
+aiStrategicArea.addObjectTypeFlag LandSpawner
+aiStrategicArea.addObjectTypeFlag East
+aiStrategicArea.setSide 1
+aiStrategicArea.setTakeable 1 0
+
+aiStrategicArea.setActive MGNest
+AIStrategicArea.addNeighbour Barn
+aiStrategicArea.addObjectTypeFlag Close
+aiStrategicArea.addObjectTypeFlag South
+aiStrategicArea.setSide 0
+aiStrategicArea.setTakeable 2 0
+
+aiStrategicArea.setActive AlliedBase
+aiStrategicArea.addObjectTypeFlag Base
+aiStrategicArea.addObjectTypeFlag LandSpawner
+aiStrategicArea.setSide 2
+aiStrategicArea.setTakeable 1 0
+
+aiStrategicArea.setActive nebel01
+aiStrategicArea.addObjectTypeFlag Close
+AIStrategicArea.addNeighbour OutSkirts
+AIStrategicArea.addNeighbour Church
+aiStrategicArea.setSide 0
+
+aiStrategicArea.setActive mg2
+aiStrategicArea.addObjectTypeFlag Close
+AIStrategicArea.addNeighbour RamellePark
+aiStrategicArea.setSide 0
+
+aiStrategicArea.setActive mg3
+aiStrategicArea.addObjectTypeFlag Close
+AIStrategicArea.addNeighbour OutSkirts
+AIStrategicArea.addNeighbour Church
+aiStrategicArea.setSide 0
+

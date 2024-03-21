@@ -1,0 +1,100 @@
+rem *** Create Strategies ***
+
+
+rem *** Road to Ramelle ***
+
+rem ** Common **
+
+aiStrategy.createStrategy attack
+aiStrategy.Aggression 1.0
+aiStrategy.NumberOfAttacks 2
+aiStrategy.NumberOfDefences 0
+aiStrategy.TimeLimit 200
+aiStrategy.setPrerequisite attackPrereq
+rem aiStrategy.setTreeModifier TTNDefensivePos 0.5
+aiStrategy.setTreeModifier TTNControlPoint 10.0
+aiStrategy.setTreeModifier TTNHostileControlPoint 15.0
+aiStrategy.setTreeModifier TTNTransportation 8.0
+aiStrategy.setTreeModifierCombatStrength CSTInfantery 10.0
+aiStrategy.setStrategicObjectsModifier ControlPoint 9.0 Hostile
+aiStrategy.setStrategicObjectsModifier ControlPoint 8.0 Neutral
+aiStrategy.setStrategicObjectsModifier ControlPoint 0.2 Owned
+aiStrategy.setStrategicObjectsModifier Close        -2.0 Hostile
+aiStrategy.setStrategicObjectsModifier Close        -2.0 Owned
+aiStrategy.setStrategicObjectsModifier Base         -2.0 Owned
+aiStrategy.setStrategicObjectsModifier East          10.0 Hostile
+aiStrategy.setStrategicObjectsModifier West          8.0 Hostile
+
+rem ** German **
+
+aiStrategy.createStrategy hold4
+aiStrategy.Aggression .8
+aiStrategy.NumberOfAttacks 1
+aiStrategy.NumberOfDefences 0.5
+aiStrategy.setPrerequisite hold4Prereq
+aiStrategy.setTreeModifier TTNDefensivePos 1.5
+aiStrategy.setTreeModifier TTNFriendGroundFixed 8.0
+aiStrategy.setTreeModifier TTNHostileGroundFixed 8.25
+aiStrategy.setTreeModifier TTNTransportation 8.0
+aiStrategy.setTreeModifierCombatStrength TTNFriendGroundFixed All 8.0
+aiStrategy.setStrategicObjectsModifier ControlPoint  3.5 Owned
+aiStrategy.setStrategicObjectsModifier ControlPoint  8.0 Hostile
+aiStrategy.setStrategicObjectsModifier Base         -2.0 Hostile
+aiStrategy.setStrategicObjectsModifier Centre        8.0 Owned
+aiStrategy.setStrategicObjectsModifier Centre        8.0 Hostile
+aiStrategy.setStrategicObjectsModifier North        -2.0 Owned
+aiStrategy.setStrategicObjectsModifier East         -2.0 Hostile
+
+aiStrategy.createStrategy hold5
+aiStrategy.Aggression 1.0
+aiStrategy.NumberOfAttacks 1
+aiStrategy.NumberOfDefences 0.5
+aiStrategy.setPrerequisite hold5Prereq
+aiStrategy.setTreeModifier TTNDefensivePos 1.5
+aiStrategy.setTreeModifier TTNFriendGroundFixed 8.0
+aiStrategy.setTreeModifier TTNHostileGroundFixed 8.25
+aiStrategy.setTreeModifier TTNTransportation 8.0
+aiStrategy.setTreeModifierCombatStrength TTNFriendGroundFixed All 8.0
+aiStrategy.setStrategicObjectsModifier ControlPoint  3.5 Owned
+aiStrategy.setStrategicObjectsModifier ControlPoint  8.0 Hostile
+aiStrategy.setStrategicObjectsModifier Base         -2.0 Hostile
+aiStrategy.setStrategicObjectsModifier Centre        8.0 Owned
+aiStrategy.setStrategicObjectsModifier Centre        8.0 Hostile
+aiStrategy.setStrategicObjectsModifier North        -2.0 Owned
+
+aiStrategy.createStrategy hold6
+aiStrategy.Aggression 0.95
+aiStrategy.NumberOfAttacks 0
+aiStrategy.NumberOfDefences 2
+aiStrategy.setPrerequisite hold6Prereq
+aiStrategy.setTreeModifier TTNDefensivePos 7.0
+aiStrategy.setTreeModifier TTNFriendGroundFixed 15.0
+aiStrategy.setTreeModifier TTNHostileGroundFixed 10.0
+aiStrategy.setTreeModifierCombatStrength TTNFriendGroundFixed All 15.0
+aiStrategy.setStrategicObjectsModifier ControlPoint  10.0 Owned
+aiStrategy.setStrategicObjectsModifier Base         -2.0 Hostile
+aiStrategy.setStrategicObjectsModifier North        -2.0 Owned
+aiStrategy.setStrategicObjectsModifier East         -2.0 Hostile
+aiStrategy.setStrategicObjectsModifier East         10.0 Owned
+
+aiStrategy.createStrategy axisattack
+aiStrategy.Aggression 1.0
+aiStrategy.NumberOfAttacks 1
+aiStrategy.NumberOfDefences 0
+aiStrategy.TimeLimit 200
+aiStrategy.setPrerequisite axisattackPrereq
+rem aiStrategy.setTreeModifier TTNDefensivePos 0.5
+aiStrategy.setTreeModifier TTNControlPoint 15.0
+aiStrategy.setTreeModifier TTNHostileControlPoint 15.0
+aiStrategy.setTreeModifier TTNFriendGroundFixed 8.0
+aiStrategy.setTreeModifier TTNTransportation 8.0
+aiStrategy.setTreeModifier TTNHostileGroundFixed 6.25
+aiStrategy.setTreeModifierCombatStrength CSTInfantery 10.0
+aiStrategy.setTreeModifierCombatStrength TTNFriendGroundFixed All 8.0
+aiStrategy.setStrategicObjectsModifier ControlPoint 8.0 Hostile
+aiStrategy.setStrategicObjectsModifier ControlPoint 9.0 Neutral
+aiStrategy.setStrategicObjectsModifier ControlPoint 0.2 Owned
+aiStrategy.setStrategicObjectsModifier Base         -2.0 Hostile
+aiStrategy.setStrategicObjectsModifier South        -2.0 Hostile
+aiStrategy.setStrategicObjectsModifier East         -2.0 Hostile
+aiStrategy.setStrategicObjectsModifier North         8.0 Hostile

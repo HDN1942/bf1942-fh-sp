@@ -1,0 +1,92 @@
+rem *********************************************
+rem Created by Battlecraft 1942.  Copyright (c)2003,2004 Digital Illusions CE
+rem **********     bizness a.k.a. Sgt Country Boy     **********
+
+ShaderManager.setTextureParam envmap bf1942\levels\Road_To_Ramelle\Textures\ENVMAP_G_.rcm
+renderer.globalLodPercent 1
+renderer.globalAmbientColor 0.094118/0.094118/0.094118
+renderer.ambientColor 0.109804/0.109804/0.109804
+renderer.diffuseColor 0.349020/0.294118/0.200000
+renderer.specularColor 0.294118/0.294118/0.294118
+renderer.vertexFogEnable 1
+renderer.fogColorVec 0.486275/0.482353/0.513726
+renderer.animatedMeshAmbientColor 0.15
+
+
+textureManager.alternativePath bf1942/Levels/Road_To_Ramelle/Texture
+textureManager.alternativePath texture\SPECIAL_GER_EUROPE_1944_FALL
+textureManager.alternativePath texture\SPECIAL_US_EUROPE_1944_SUMMER
+textureManager.alternativePath Texture\GENERAL_US
+
+shadow.shadowColor 0.300000
+
+Game.setViewDistance 350
+Game.spawnPlayers 1
+renderer.fogstart 45
+renderer.fogend 400
+
+ObjectTemplate.create Flag BlueFlag
+ObjectTemplate.team 1
+ObjectTemplate.networkableInfo FlagBodyInfo
+ObjectTemplate.radius 5
+ObjectTemplate.TimeToReSpawn 10
+ObjectTemplate.addTemplate AnimatedGeFlag
+
+ObjectTemplate.create Flag RedFlag
+ObjectTemplate.team 2
+ObjectTemplate.networkableInfo FlagBodyInfo
+ObjectTemplate.radius 5
+ObjectTemplate.TimeToReSpawn 10
+ObjectTemplate.addTemplate AnimatedUsFlag
+
+game.setTeamSkin 1 GermanSoldier
+game.setKit 1 0 1German_CloseQuartersMp40
+game.setKit 1 1 2German_AssaultG43
+game.setKit 1 2 3German_AssaultK98
+game.setKit 1 3 4German_OfficerMp40
+game.setKit 1 4 5German_EngineerK98
+
+game.setTeamSkin 2 USSoldier
+game.setKit 2 0 1Us_ClosequartersThompson
+game.setKit 2 1 2US_AssaultGarand
+game.setKit 2 2 3Us_AssaultSpringfieldWN
+game.setKit 2 3 4Us_OfficerM1Carabine
+game.setKit 2 4 5US_EngineerM1Carabine
+
+game.setLevelCheck 2242588848
+game.setActiveCombatArea 0 0 2048 2048
+
+shaderManager.setDefaultShaderSolidColor 0.2/0.2/0.2
+
+run Init/SkyAndSun
+run Init/Terrain
+run Sound/Environment
+run objects/objects
+
+game.assaultTeam 2
+
+water.specularEnable 1
+water.texLayer1 texture/water07
+water.texLayer2 texture/water07
+water.normalMap texture/normalMap02
+water.scrollDirectionNormalmap 1.000000/0.000000
+water.scrollDirection1 1.000000/-0.500000
+water.scrollDirection2 1.000000/0.500000
+water.specularColor 0.650000/0.550000/0.400000
+water.scrollLayer1 0.045000
+water.scrollLayer2 0.030000
+water.scrollNormalmap 0.040000
+water.specularStreakFactor 0.001000
+water.tileLayer1 0.500000
+water.tileLayer2 0.500000
+water.tileNormalmap 0.500000
+water.lightDirection -0.300000/0.500000/-0.650000
+water.color 0.647059/0.600000/0.564706
+water.deepColor 0.294118/0.294118/0.294118
+water.waterAlphaDepth 0.000000
+water.waterShallowAlpha 1.000000
+
+game.setBeforeSpawnCameraPosition 1 1256.895630/82.877350/780.630615
+game.setBeforeSpawnCameraPosition 2 1256.895630/82.877350/780.630615
+
+game.setMultiplayerBriefingObjectives "Welcome to Road_To_Ramelle. This is a PUSH MAP! Objectives: ALLIES: Spawn at mainbase and head North fighting through German resistance in the fields and city. Capture both flag #2's to stop bleed and capture #3 to make axis bleed. AXIS: Try to hold off the ALLIED advance into the city to the best of your abilities. This is a German defensive map created with the idea of SPR AFTER the first ALLIED attempt to hold the city. It's a custom idea of the second wave of ALLIED soldiers advancing to the city after being pushed back. Fight hard and ENJOY Road To Ramelle brought to you by: Bizness"

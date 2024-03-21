@@ -1,0 +1,273 @@
+rem
+rem ***  ***
+rem
+Object.create mg_nest_spawn1
+Object.absolutePosition 1260.6/90.1624/923.062
+rem
+rem ***  ***
+rem
+Object.create mg_nest_spawn3
+Object.absolutePosition 1250.27/85.7385/1048.46
+Object.rotation 284.2/0/0
+rem
+rem ***  ***
+rem
+Object.create mg_nest_spawn5
+Object.absolutePosition 1276.01/85.388/1051.11
+Object.rotation -107.41/0/0
+rem
+rem ***  ***
+rem
+Object.create mg_nest_spawn9
+Object.absolutePosition 1219.83/90.4133/1013.2
+Object.rotation 176.53/0/0
+rem
+rem ***  ***
+rem
+Object.create mg_nest_spawn10
+Object.absolutePosition 1265.79/90.2234/922.761
+Object.rotation -84.58/0/0
+rem
+rem ***  ***
+rem
+Object.create mg_nest_spawn11
+Object.absolutePosition 1256.98/91.2336/933.877
+Object.rotation 110.05/0/0
+rem
+rem ***  ***
+rem
+Object.create mg_nest_spawn12
+Object.absolutePosition 1218.69/89.1766/1022.43
+Object.rotation 243.89/0/0
+rem
+rem ***  ***
+rem
+Object.create alliedbase_spawn2
+Object.absolutePosition 1283.24/83.2216/588.716
+rem
+rem ***  ***
+rem
+Object.create alliedbase_spawn3
+Object.absolutePosition 1283.89/83.0743/598.982
+Object.rotation 176.01/0/0
+rem
+rem ***  ***
+rem
+Object.create alliedbase_spawn4
+Object.absolutePosition 1280.75/83.0208/607.126
+rem
+rem ***  ***
+rem
+Object.create alliedbase_spawn5
+Object.absolutePosition 1269.72/83.1186/607.897
+rem
+rem ***  ***
+rem
+Object.create the_alamo_spawn1
+Object.absolutePosition 1058.07/76.4569/1301.21
+rem
+rem ***  ***
+rem
+Object.create the_alamo_spawn6
+Object.absolutePosition 1023.29/76.6115/1314.69
+rem
+rem ***  ***
+rem
+Object.create the_alamo_spawn7
+Object.absolutePosition 1057.25/76.4594/1316.23
+Object.rotation 130.55/0/0
+rem
+rem ***  ***
+rem
+Object.create the_alamo_spawn8
+Object.absolutePosition 1005.57/77.1866/1304.46
+Object.rotation 60.17/0/0
+rem
+rem ***  ***
+rem
+Object.create the_alamo_spawn9
+Object.absolutePosition 1053.55/76.8029/1316.2
+rem
+rem ***  ***
+rem
+Object.create the_alamo_spawn10
+Object.absolutePosition 1008.58/76.6942/1303.2
+Object.rotation 87.76/0/0
+rem
+rem ***  ***
+rem
+Object.create dead_end_spawn1
+Object.absolutePosition 1361.44/76.3261/1285.22
+Object.rotation 183.46/0/0
+rem
+rem ***  ***
+rem
+Object.create dead_end_spawn2
+Object.absolutePosition 1291.67/76.3872/1387.02
+Object.rotation 171.65/0/0
+rem
+rem ***  ***
+rem
+Object.create dead_end_spawn3
+Object.absolutePosition 1295.9/76.21/1367.65
+Object.rotation 171.65/0/0
+rem
+rem ***  ***
+rem
+Object.create dead_end_spawn4
+Object.absolutePosition 1321.75/77.2485/1305.32
+Object.rotation 228.77/0/0
+rem
+rem ***  ***
+rem
+Object.create ramelle_park_spawn1
+Object.absolutePosition 1284.42/76.3274/1527.06
+rem
+rem ***  ***
+rem
+Object.create ramelle_park_spawn2
+Object.absolutePosition 1263.25/77.1786/1496.97
+rem
+rem ***  ***
+rem
+Object.create ramelle_park_spawn3
+Object.absolutePosition 1261.28/77.11/1498.57
+Object.rotation 88.84/0/0
+rem
+rem ***  ***
+rem
+Object.create ramelle_park_spawn4
+Object.absolutePosition 1284.11/76.3517/1542.57
+Object.rotation 172.66/0/0
+rem
+rem ***  ***
+rem
+Object.create ramelle_park_spawn5
+Object.absolutePosition 1180.99/76.7009/1521.49
+rem
+rem ***  ***
+rem
+Object.create ramelle_park_spawn8
+Object.absolutePosition 1282.47/76.2194/1559.62
+rem
+rem ***  ***
+rem
+Object.create ramelle_park_spawn9
+Object.absolutePosition 1289.38/76.35/1525.59
+rem
+rem ***  ***
+rem
+Object.create ramelle_park_spawn10
+Object.absolutePosition 1282.66/76.22/1552.39
+Object.rotation 181.96/0/0
+rem
+rem ***  ***
+rem
+Object.create axisbase_spawn2
+Object.absolutePosition 1101.63/76.7043/1644.11
+Object.rotation 176.21/0/0
+rem
+rem ***  ***
+rem
+Object.create town_corner_spawn1
+Object.absolutePosition 618.065/76.78/1646.3
+Object.rotation 175.21/0/0
+rem
+rem ***  ***
+rem
+Object.create town_corner_spawn8
+Object.absolutePosition 629.781/76.68/1714.52
+rem
+rem ***  ***
+rem
+Object.create axisbase_spawn18
+Object.absolutePosition 1040.94/75.9893/1712.98
+Object.rotation -135.26/0/0
+rem
+rem ***  ***
+rem
+Object.create axisbase_spawn20
+Object.absolutePosition 1111.44/76.15/1666.91
+Object.rotation -133.85/0/0
+rem
+rem ***  ***
+rem
+Object.create out_skirts_spawn1
+Object.absolutePosition 598.769/76.19/1642.42
+Object.rotation 104.92/0/0
+rem
+rem ***  ***
+rem
+Object.create out_skirts_spawn2
+Object.absolutePosition 604.838/76.21/1642.03
+Object.rotation 99.94/0/0
+rem
+rem ***  ***
+rem
+Object.create out_skirts_spawn7
+Object.absolutePosition 621.09/76.19/1715.19
+rem
+rem ***  ***
+rem
+Object.create out_skirts_spawn8
+Object.absolutePosition 639.482/76.56/1702.82
+Object.rotation 179.59/0/0
+rem
+rem ***  ***
+rem
+Object.create out_skirts_spawn9
+Object.absolutePosition 614.103/76.6843/1645.92
+rem
+rem ***  ***
+rem
+Object.create mg_nest_spawn2
+Object.absolutePosition 1270.15/91.4519/934.049
+rem
+rem ***  ***
+rem
+Object.create alliedbase_spawn18
+Object.absolutePosition 1394.27/81.44/610.59
+Object.rotation 86.96/0/0
+rem
+rem ***  ***
+rem
+Object.create alliedbase_spawn19
+Object.absolutePosition 1395.13/81.4/605.05
+rem
+rem ***  ***
+rem
+Object.create alliedbase_spawn20
+Object.absolutePosition 1401.27/81.44/608.502
+Object.rotation -92.27/0/0
+rem
+rem ***  ***
+rem
+Object.create alliedbase_spawn21
+Object.absolutePosition 1282.55/82.1673/556.565
+rem
+rem ***  ***
+rem
+Object.create alliedbase_spawn22
+Object.absolutePosition 1331/82.3/559
+rem
+rem ***  ***
+rem
+Object.create alliedbase_spawn23
+Object.absolutePosition 1296.42/82.21/559.36
+rem
+rem ***  ***
+rem
+Object.create alliedbase_spawn24
+Object.absolutePosition 1324.97/81.92/550.433
+rem
+rem ***  ***
+rem
+Object.create barn
+Object.absolutePosition 1169.79/89.4406/947.328
+rem
+rem ***  ***
+rem
+Object.create outskirts
+Object.absolutePosition 597.40/82.12/1672.89
+Object.setOSId 6
+
