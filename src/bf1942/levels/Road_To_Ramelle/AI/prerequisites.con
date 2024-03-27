@@ -3,24 +3,33 @@ rem *** Create Prerequisites ***
 
 rem *** Road to Ramelle ***
 
-rem ** US **
+rem ** Allies **
 
-aiStrategy.createPrerequisite attackPrereq
-aiStrategy.addCondition constantCond			10.0
+aiStrategy.createPrerequisite hold0SouthPrereq
+aiStrategy.addCondition zeroFriendlySouthCond   20.0
 
-rem ** German **
+rem ** Allied base counts as 1 CP, holdMin2 means barn has been taken **
+aiStrategy.createPrerequisite holdMin2Prereq
+aiStrategy.addCondition minTwoFriendlyCPCond    10.0
 
-aiStrategy.createPrerequisite hold4Prereq
-aiStrategy.addCondition fourFriendlyCPCond		10.0
+aiStrategy.createPrerequisite holdAllPrereq
+aiStrategy.addCondition sevenFriendlyCPCond     20.0
 
-aiStrategy.createPrerequisite hold5Prereq
-aiStrategy.addCondition fiveFriendlyCPCond		10.0
+rem ** Axis **
 
+rem ** Axis hold 6 CPs at start of game **
 aiStrategy.createPrerequisite hold6Prereq
-aiStrategy.addCondition sixFriendlyCPCond		10.0
+aiStrategy.addCondition sixFriendlyCPCond       10.0
 
-aiStrategy.createPrerequisite axisattackPrereq
-aiStrategy.addCondition threeFriendlyCPCond		10.0
+rem ** Axis can only hold max 5 CPs after Barn is captured **
+aiStrategy.createPrerequisite hold5Prereq
+aiStrategy.addCondition fiveFriendlyCPCond      10.0
+
+aiStrategy.createPrerequisite holdMax4Prereq
+aiStrategy.addCondition maxFourFriendlyCPCond   10.0
+
+aiStrategy.createPrerequisite hold0Prereq
+aiStrategy.addCondition zeroFriendlyCPCond      20.0
 
 
 

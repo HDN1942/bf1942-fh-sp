@@ -62,7 +62,7 @@ rem
 rem ***  ***
 rem
 Object.create apc
-Object.absolutePosition 1273.88/93.5/979.67
+Object.absolutePosition 1275.08/93.5/979.72
 Object.rotation 180/0/0
 Object.setOSId 5
 Object.setTeam 1
@@ -93,7 +93,7 @@ rem
 rem ***  ***
 rem
 Object.create medtank
-Object.absolutePosition 1118.03/76.19/1637.08
+Object.absolutePosition 1071.48/76.19/1628.44
 Object.rotation 180/0/0
 Object.setOSId 1
 Object.setTeam 1
@@ -111,14 +111,6 @@ Object.create nebel
 Object.absolutePosition 1220.7/75.61/1492.49
 Object.rotation -132.81/0/0
 Object.setOSId 4
-Object.setTeam 1
-rem
-rem ***  ***
-rem
-Object.create atkits
-Object.absolutePosition 1256.02/92.2403/979.632
-Object.rotation 180/0/0
-Object.setOSId 5
 Object.setTeam 1
 rem
 rem ***  ***
@@ -170,42 +162,10 @@ Object.setTeam 0
 rem
 rem ***  ***
 rem
-Object.create atkits
-Object.absolutePosition 625.684/76.9337/1652.56
-Object.rotation 155.14/0/0
-Object.setOSId 6
-Object.setTeam 0
-rem
-rem ***  ***
-rem
-Object.create atkits
-Object.absolutePosition 635.27/76.2/1702.83
-Object.rotation 164.67/0/0
-Object.setOSId 6
-Object.setTeam 0
-rem
-rem ***  ***
-rem
 Object.create gmc_spawner
 Object.absolutePosition 646.939/76.8377/1638.6
 Object.rotation 90/0/0
 Object.setOSId 6
-rem
-rem ***  ***
-rem
-Object.create atkits
-Object.absolutePosition 1432.96/77.02/1295.07
-Object.rotation -146.63/0/0
-Object.setOSId 7
-Object.setTeam 0
-rem
-rem ***  ***
-rem
-Object.create atkits
-Object.absolutePosition 1342.8/77.3188/1344.18
-Object.rotation 137.61/0/0
-Object.setOSId 7
-Object.setTeam 0
 rem
 rem ***  ***
 rem
@@ -350,29 +310,8 @@ Object.setTeam 0
 rem
 rem ***  ***
 rem
-Object.create atkits
-Object.absolutePosition 1256.5/92.25/981.6
-Object.setOSId 5
-Object.setTeam 0
-rem
-rem ***  ***
-rem
-Object.create atkits
-Object.absolutePosition 1297.05/82.19/564.08
-Object.setOSId 2
-Object.setTeam 0
-rem
-rem ***  ***
-rem
-Object.create atkits
-Object.absolutePosition 1298.16/82.26/570.75
-Object.setOSId 2
-Object.setTeam 0
-rem
-rem ***  ***
-rem
 Object.create truck
-Object.absolutePosition 1261.93/91.72/951.57
+Object.absolutePosition 1247.62/91.72/955.73
 Object.rotation -90/0/0
 Object.setOSId 5
 Object.setTeam 0
@@ -395,60 +334,6 @@ Object.setTeam 0
 rem
 rem ***  ***
 rem
-Object.create atkits
-Object.absolutePosition 1051.19/76.23/1294.18
-Object.rotation -28/0/0
-Object.setOSId 3
-Object.setTeam 0
-rem
-rem ***  ***
-rem
-Object.create atkits
-Object.absolutePosition 1050.56/76.2226/1295.97
-Object.rotation 69/0/0
-Object.setOSId 3
-Object.setTeam 0
-rem
-rem ***  ***
-rem
-Object.create atkits
-Object.absolutePosition 1340.16/77.2997/1345.9
-Object.rotation 83/0/0
-Object.setOSId 7
-Object.setTeam 0
-rem
-rem ***  ***
-rem
-Object.create atkits
-Object.absolutePosition 1258.36/77.38/1500.13
-Object.setOSId 4
-Object.setTeam 0
-rem
-rem ***  ***
-rem
-Object.create atkits
-Object.absolutePosition 1202.34/77.43/1521.22
-Object.rotation 27/0/0
-Object.setOSId 4
-Object.setTeam 0
-rem
-rem ***  ***
-rem
-Object.create atkits
-Object.absolutePosition 1091.28/76.4623/1659.51
-Object.setOSId 1
-Object.setTeam 0
-rem
-rem ***  ***
-rem
-Object.create atkits
-Object.absolutePosition 1090.26/75.94/1657
-Object.rotation 83/0/0
-Object.setOSId 1
-Object.setTeam 0
-rem
-rem ***  ***
-rem
 Object.create assultkits
 Object.absolutePosition 975.77/76.03/1597.66
 Object.setOSId 1
@@ -459,13 +344,6 @@ rem
 Object.create assultkits
 Object.absolutePosition 975.93/76.054/1595.13
 Object.rotation 61/0/0
-Object.setOSId 1
-Object.setTeam 0
-rem
-rem ***  ***
-rem
-Object.create atkits
-Object.absolutePosition 973.31/76.034/1599.43
 Object.setOSId 1
 Object.setTeam 0
 rem
@@ -589,20 +467,6 @@ rem
 Object.create stukaspotter
 Object.absolutePosition 627.364/76.9611/1652.96
 Object.setOSId 1
-rem
-rem ***  ***
-rem
-Object.create atkits
-Object.absolutePosition 1300.06/77.1291/1384.14
-Object.rotation 55.7/0/0
-Object.setOSId 7
-rem
-rem ***  ***
-rem
-Object.create atkits
-Object.absolutePosition 1057.55/85.5325/1290.99
-Object.rotation -5/0/0
-Object.setOSId 3
 rem
 rem ***  ***
 rem

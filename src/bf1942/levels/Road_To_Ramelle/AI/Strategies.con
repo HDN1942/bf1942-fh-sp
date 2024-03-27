@@ -3,66 +3,74 @@ rem *** Create Strategies ***
 
 rem *** Road to Ramelle ***
 
-rem ** Common **
+rem ** Allies **
 
-aiStrategy.createStrategy attack
+rem ** Allies have no CP **
+aiStrategy.createStrategy initialAttack
+aiStrategy.Aggression 1.0
+aiStrategy.NumberOfAttacks 1
+aiStrategy.NumberOfDefences 0
+aiStrategy.setPrerequisite hold0SouthPrereq
+aiStrategy.setTreeModifier TTNFriendGroundFixed 8.0
+aiStrategy.setTreeModifier TTNFriendArtillery 8.0
+aiStrategy.setStrategicObjectsModifier ControlPoint 10.0 Hostile
+aiStrategy.setStrategicObjectsModifier ControlPoint 10.0 Neutral
+aiStrategy.setStrategicObjectsModifier South         1.5
+aiStrategy.setStrategicObjectsModifier Base          0.4 Owned
+
+rem ** Allies have at least base and barn CPs **
+aiStrategy.createStrategy attack1
+aiStrategy.Aggression 1.0
+aiStrategy.NumberOfAttacks 1
+aiStrategy.NumberOfDefences 0
+aiStrategy.TimeLimit 180
+aiStrategy.setPrerequisite holdMin2Prereq
+aiStrategy.setTreeModifier TTNFriendGroundFixed      0.25
+aiStrategy.setStrategicObjectsModifier ControlPoint  8.0 Hostile
+aiStrategy.setStrategicObjectsModifier ControlPoint  9.0 Neutral
+aiStrategy.setStrategicObjectsModifier Front         1.5 
+aiStrategy.setStrategicObjectsModifier South         0.2 Owned
+
+rem ** Allies have at least base and barn CPs **
+aiStrategy.createStrategy attack2
 aiStrategy.Aggression 1.0
 aiStrategy.NumberOfAttacks 2
 aiStrategy.NumberOfDefences 0
-aiStrategy.TimeLimit 200
-aiStrategy.setPrerequisite attackPrereq
-rem aiStrategy.setTreeModifier TTNDefensivePos 0.5
-aiStrategy.setTreeModifier TTNControlPoint 10.0
-aiStrategy.setTreeModifier TTNHostileControlPoint 15.0
-aiStrategy.setTreeModifier TTNTransportation 8.0
-aiStrategy.setTreeModifierCombatStrength CSTInfantery 10.0
-aiStrategy.setStrategicObjectsModifier ControlPoint 9.0 Hostile
-aiStrategy.setStrategicObjectsModifier ControlPoint 8.0 Neutral
-aiStrategy.setStrategicObjectsModifier ControlPoint 0.2 Owned
-aiStrategy.setStrategicObjectsModifier Close        -2.0 Hostile
-aiStrategy.setStrategicObjectsModifier Close        -2.0 Owned
-aiStrategy.setStrategicObjectsModifier Base         -2.0 Owned
-aiStrategy.setStrategicObjectsModifier East          10.0 Hostile
-aiStrategy.setStrategicObjectsModifier West          8.0 Hostile
-
-rem ** German **
-
-aiStrategy.createStrategy hold4
-aiStrategy.Aggression .8
-aiStrategy.NumberOfAttacks 1
-aiStrategy.NumberOfDefences 0.5
-aiStrategy.setPrerequisite hold4Prereq
-aiStrategy.setTreeModifier TTNDefensivePos 1.5
-aiStrategy.setTreeModifier TTNFriendGroundFixed 8.0
-aiStrategy.setTreeModifier TTNHostileGroundFixed 8.25
-aiStrategy.setTreeModifier TTNTransportation 8.0
-aiStrategy.setTreeModifierCombatStrength TTNFriendGroundFixed All 8.0
-aiStrategy.setStrategicObjectsModifier ControlPoint  3.5 Owned
+aiStrategy.TimeLimit 180
+aiStrategy.setPrerequisite holdMin2Prereq
+aiStrategy.setTreeModifier TTNFriendGroundFixed      0.25
 aiStrategy.setStrategicObjectsModifier ControlPoint  8.0 Hostile
-aiStrategy.setStrategicObjectsModifier Base         -2.0 Hostile
-aiStrategy.setStrategicObjectsModifier Centre        8.0 Owned
-aiStrategy.setStrategicObjectsModifier Centre        8.0 Hostile
-aiStrategy.setStrategicObjectsModifier North        -2.0 Owned
-aiStrategy.setStrategicObjectsModifier East         -2.0 Hostile
+aiStrategy.setStrategicObjectsModifier ControlPoint  9.0 Neutral
+aiStrategy.setStrategicObjectsModifier Front         1.5
+aiStrategy.setStrategicObjectsModifier South         0.2
 
-aiStrategy.createStrategy hold5
+rem ** Allies have at least base and barn CPs **
+aiStrategy.createStrategy alliesSpread
 aiStrategy.Aggression 1.0
-aiStrategy.NumberOfAttacks 1
-aiStrategy.NumberOfDefences 0.5
-aiStrategy.setPrerequisite hold5Prereq
-aiStrategy.setTreeModifier TTNDefensivePos 1.5
-aiStrategy.setTreeModifier TTNFriendGroundFixed 8.0
-aiStrategy.setTreeModifier TTNHostileGroundFixed 8.25
-aiStrategy.setTreeModifier TTNTransportation 8.0
-aiStrategy.setTreeModifierCombatStrength TTNFriendGroundFixed All 8.0
-aiStrategy.setStrategicObjectsModifier ControlPoint  3.5 Owned
+aiStrategy.NumberOfAttacks 4
+aiStrategy.NumberOfDefences 0
+aiStrategy.TimeLimit 120
+aiStrategy.setPrerequisite holdMin2Prereq
+aiStrategy.setTreeModifier TTNFriendGroundFixed      0.25
 aiStrategy.setStrategicObjectsModifier ControlPoint  8.0 Hostile
-aiStrategy.setStrategicObjectsModifier Base         -2.0 Hostile
-aiStrategy.setStrategicObjectsModifier Centre        8.0 Owned
-aiStrategy.setStrategicObjectsModifier Centre        8.0 Hostile
-aiStrategy.setStrategicObjectsModifier North        -2.0 Owned
+aiStrategy.setStrategicObjectsModifier ControlPoint  9.0 Neutral
+aiStrategy.setStrategicObjectsModifier Front         1.5
+aiStrategy.setStrategicObjectsModifier South         0.2
 
-aiStrategy.createStrategy hold6
+rem ** Allies have all CPs **
+aiStrategy.createStrategy holdAll
+aiStrategy.Aggression 0.1
+aiStrategy.NumberOfAttacks 1
+aiStrategy.NumberOfDefences 1
+aiStrategy.setPrerequisite holdAllPrereq
+aiStrategy.setStrategicObjectsModifier ControlPoint  9.0 Neutral
+aiStrategy.setStrategicObjectsModifier Front         1.5
+aiStrategy.setStrategicObjectsModifier Safe          0.2 Owned
+
+rem ** Axis **
+
+rem ** Axis holds Barn CP **
+aiStrategy.createStrategy initialDefense
 aiStrategy.Aggression 0.95
 aiStrategy.NumberOfAttacks 0
 aiStrategy.NumberOfDefences 2
@@ -71,30 +79,70 @@ aiStrategy.setTreeModifier TTNDefensivePos 7.0
 aiStrategy.setTreeModifier TTNFriendGroundFixed 15.0
 aiStrategy.setTreeModifier TTNHostileGroundFixed 10.0
 aiStrategy.setTreeModifierCombatStrength TTNFriendGroundFixed All 15.0
-aiStrategy.setStrategicObjectsModifier ControlPoint  10.0 Owned
-aiStrategy.setStrategicObjectsModifier Base         -2.0 Hostile
-aiStrategy.setStrategicObjectsModifier North        -2.0 Owned
-aiStrategy.setStrategicObjectsModifier East         -2.0 Hostile
-aiStrategy.setStrategicObjectsModifier East         10.0 Owned
+aiStrategy.setStrategicObjectsModifier South         5.0
+aiStrategy.setStrategicObjectsModifier StrongPoint  10.0
+aiStrategy.setStrategicObjectsModifier Base          2.0 Hostile
+aiStrategy.setStrategicObjectsModifier Safe          0.2
 
-aiStrategy.createStrategy axisattack
+rem ** Axis holds all CPs except Barn **
+aiStrategy.createStrategy townDefense
+aiStrategy.Aggression 0.35
+aiStrategy.NumberOfAttacks 1
+aiStrategy.NumberOfDefences 2
+aiStrategy.setPrerequisite hold5Prereq
+aiStrategy.setTreeModifier TTNDefensivePos 1.5
+aiStrategy.setTreeModifier TTNFriendArtillery 8.0
+aiStrategy.setStrategicObjectsModifier East          8.0
+aiStrategy.setStrategicObjectsModifier West          8.0
+aiStrategy.setStrategicObjectsModifier South         1.5 Hostile
+aiStrategy.setStrategicObjectsModifier Safe          0.2
+
+rem ** Allies have taken at least one CP other than Barn **
+aiStrategy.createStrategy counterAttack1
+aiStrategy.Aggression 0.8
+aiStrategy.NumberOfAttacks 1
+aiStrategy.NumberOfDefences 0
+aiStrategy.TimeLimit 180
+aiStrategy.setPrerequisite holdMax4Prereq
+aiStrategy.setStrategicObjectsModifier ControlPoint  8.0 Hostile
+aiStrategy.setStrategicObjectsModifier ControlPoint  9.0 Neutral
+aiStrategy.setStrategicObjectsModifier Front         1.5
+aiStrategy.setStrategicObjectsModifier Safe          0.2
+aiStrategy.setStrategicObjectsModifier South         0.1
+
+rem ** Allies have taken at least one CP other than Barn **
+aiStrategy.createStrategy counterAttack2
+aiStrategy.Aggression 1
+aiStrategy.NumberOfAttacks 2
+aiStrategy.NumberOfDefences 0
+aiStrategy.TimeLimit 180
+aiStrategy.setPrerequisite holdMax4Prereq
+aiStrategy.setStrategicObjectsModifier ControlPoint  8.0 Hostile
+aiStrategy.setStrategicObjectsModifier ControlPoint  9.0 Neutral
+aiStrategy.setStrategicObjectsModifier Front         1.5
+aiStrategy.setStrategicObjectsModifier Safe          0.2
+aiStrategy.setStrategicObjectsModifier South         0.1
+
+rem ** Allies have taken at least one CP other than Barn **
+aiStrategy.createStrategy axisSpread
+aiStrategy.Aggression 1.0
+aiStrategy.NumberOfAttacks 4
+aiStrategy.NumberOfDefences 0
+aiStrategy.TimeLimit 120
+aiStrategy.setPrerequisite holdMax4Prereq
+aiStrategy.setStrategicObjectsModifier ControlPoint  8.0 Hostile
+aiStrategy.setStrategicObjectsModifier ControlPoint  9.0 Neutral
+aiStrategy.setStrategicObjectsModifier Front         1.5
+aiStrategy.setStrategicObjectsModifier Safe          0.2
+aiStrategy.setStrategicObjectsModifier South         0.1
+
+rem ** Axis holds no CPs **
+aiStrategy.createStrategy breakOut
 aiStrategy.Aggression 1.0
 aiStrategy.NumberOfAttacks 1
 aiStrategy.NumberOfDefences 0
-aiStrategy.TimeLimit 200
-aiStrategy.setPrerequisite axisattackPrereq
-rem aiStrategy.setTreeModifier TTNDefensivePos 0.5
-aiStrategy.setTreeModifier TTNControlPoint 15.0
-aiStrategy.setTreeModifier TTNHostileControlPoint 15.0
-aiStrategy.setTreeModifier TTNFriendGroundFixed 8.0
-aiStrategy.setTreeModifier TTNTransportation 8.0
-aiStrategy.setTreeModifier TTNHostileGroundFixed 6.25
-aiStrategy.setTreeModifierCombatStrength CSTInfantery 10.0
-aiStrategy.setTreeModifierCombatStrength TTNFriendGroundFixed All 8.0
-aiStrategy.setStrategicObjectsModifier ControlPoint 8.0 Hostile
-aiStrategy.setStrategicObjectsModifier ControlPoint 9.0 Neutral
-aiStrategy.setStrategicObjectsModifier ControlPoint 0.2 Owned
-aiStrategy.setStrategicObjectsModifier Base         -2.0 Hostile
-aiStrategy.setStrategicObjectsModifier South        -2.0 Hostile
-aiStrategy.setStrategicObjectsModifier East         -2.0 Hostile
-aiStrategy.setStrategicObjectsModifier North         8.0 Hostile
+aiStrategy.setPrerequisite hold0Prereq
+aiStrategy.setStrategicObjectsModifier ControlPoint  8.0 Hostile
+aiStrategy.setStrategicObjectsModifier ControlPoint  9.0 Neutral
+aiStrategy.setStrategicObjectsModifier Front         2.0
+aiStrategy.setStrategicObjectsModifier South         0.1

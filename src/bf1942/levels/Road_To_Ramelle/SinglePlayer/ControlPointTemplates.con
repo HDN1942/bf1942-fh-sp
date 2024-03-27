@@ -69,14 +69,14 @@ ObjectTemplate.setTeamGeometry 2 flagus_m1
 ObjectTemplate.create ControlPoint mg_nest
 ObjectTemplate.networkableInfo ControlPointInfo
 ObjectTemplate.setControlPointName MG_Nest
-ObjectTemplate.radius 7
+ObjectTemplate.radius 20
 ObjectTemplate.team 1
 ObjectTemplate.spawnGroupId 5
 ObjectTemplate.objectSpawnerId 5
 ObjectTemplate.timeToGetControl 0
 ObjectTemplate.timeToLoseControl 5
 ObjectTemplate.onlyTakeableByTeam 2
-ObjectTemplate.geometry 
+ObjectTemplate.geometry flagbase_m1
 ObjectTemplate.areaValue 10
 ObjectTemplate.disableIfEnemyInsideRadius 0
 ObjectTemplate.disableWhenLosingControl 0
@@ -85,8 +85,8 @@ ObjectTemplate.loseControlWhenNotClose 0
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.addTemplate AnimatedFlag
 ObjectTemplate.setPosition 0.000000/8.200000/0.000000
-ObjectTemplate.setTeamGeometry 1 
-ObjectTemplate.setTeamGeometry 2 
+ObjectTemplate.setTeamGeometry 1 flagge_m1
+ObjectTemplate.setTeamGeometry 2 flagus_m1
 
 ObjectTemplate.create ControlPoint ramelle_park
 ObjectTemplate.networkableInfo ControlPointInfo
@@ -133,7 +133,7 @@ ObjectTemplate.setTeamGeometry 2 flagus_m1
 
 ObjectTemplate.create ControlPoint town_square
 ObjectTemplate.networkableInfo ControlPointInfo
-ObjectTemplate.setControlPointName Town_Square
+ObjectTemplate.setControlPointName Church
 ObjectTemplate.radius 15
 ObjectTemplate.team 1
 ObjectTemplate.spawnGroupId 1

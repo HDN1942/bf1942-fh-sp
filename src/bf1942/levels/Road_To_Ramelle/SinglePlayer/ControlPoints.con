@@ -2,7 +2,7 @@ rem
 rem ***  ***
 rem
 Object.create town_square
-Object.absolutePosition 1085.03/76.0957/1681.1
+Object.absolutePosition 1101.87/76.0957/1612.21
 rem
 rem ***  ***
 rem
@@ -17,12 +17,12 @@ rem
 rem ***  ***
 rem
 Object.create ramelle_park
-Object.absolutePosition 1201.98/75.71/1514.01
+Object.absolutePosition 1201.96/75.71/1486.89
 rem
 rem ***  ***
 rem
 Object.create mg_nest
-Object.absolutePosition 1262.22/92.82/982.35
+Object.absolutePosition 1261.54/91.31/952.47
 rem
 rem ***  ***
 rem
@@ -32,4 +32,4 @@ rem
 rem ***  ***
 rem
 Object.create rail_yard
-Object.absolutePosition 1331.77/75.71/1329.66
+Object.absolutePosition 1342.32/75.71/1307.40

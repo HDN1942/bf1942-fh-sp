@@ -39,6 +39,29 @@ ObjectTemplate.radius 5
 ObjectTemplate.TimeToReSpawn 10
 ObjectTemplate.addTemplate AnimatedUsFlag
 
+Var v_is_coop
+run ../../game/is_coop.con
+
+if v_is_coop == True
+
+rem ** Swap second assault kit for AT in coop mode **
+
+game.setTeamSkin 1 GermanSoldier
+game.setKit 1 0 1German_CloseQuartersMp40
+game.setKit 1 1 2German_AssaultG43
+game.setKit 1 2 3German_ATPanzerfaust30
+game.setKit 1 3 4German_OfficerMp40
+game.setKit 1 4 5German_EngineerK98
+
+game.setTeamSkin 2 USSoldier
+game.setKit 2 0 1Us_ClosequartersThompson
+game.setKit 2 1 2US_AssaultGarand
+game.setKit 2 2 3Us_ATBazooka
+game.setKit 2 3 4Us_OfficerM1Carabine
+game.setKit 2 4 5US_EngineerM1Carabine
+
+else
+
 game.setTeamSkin 1 GermanSoldier
 game.setKit 1 0 1German_CloseQuartersMp40
 game.setKit 1 1 2German_AssaultG43
@@ -52,6 +75,8 @@ game.setKit 2 1 2US_AssaultGarand
 game.setKit 2 2 3Us_AssaultSpringfieldWN
 game.setKit 2 3 4Us_OfficerM1Carabine
 game.setKit 2 4 5US_EngineerM1Carabine
+
+endIf
 
 game.setLevelCheck 2242588848
 game.setActiveCombatArea 0 0 2048 2048

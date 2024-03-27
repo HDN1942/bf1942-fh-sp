@@ -45,10 +45,15 @@ run ai/conditions.con
 run ai/prerequisites.con
 run ai/Strategies.con
 
-ai.addSAIStrategy 1 hold6
-ai.addSAIStrategy 1 hold5
-ai.addSAIStrategy 1 hold4
-ai.addSAIStrategy 1 axisattack
+ai.addSAIStrategy 1 initialDefense
+ai.addSAIStrategy 1 townDefense
+ai.addSAIStrategy 1 counterAttack1
+ai.addSAIStrategy 1 counterAttack2
+ai.addSAIStrategy 1 axisSpread
+ai.addSAIStrategy 1 breakOut
 
-ai.addSAIStrategy 2 attack
-
+ai.addSAIStrategy 2 initialAttack
+ai.addSAIStrategy 2 attack1
+ai.addSAIStrategy 2 attack2
+ai.addSAIStrategy 2 alliesSpread
+ai.addSAIStrategy 2 holdAll

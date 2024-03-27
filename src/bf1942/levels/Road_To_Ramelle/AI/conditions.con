@@ -1,23 +1,28 @@
 rem *** Create Conditions ***
 
+
 rem *** Road to Ramelle ***
 
-rem ** attack **
-aiStrategy.createConstantCondition constantCond Crisp Equal Both UnitConstant 1.0
-aiStrategy.setConditionStrength Required
-
-rem ** hold4 **
-aiStrategy.createConstantCondition fourFriendlyCPCond Crisp Equal Friendly ControlPoint 4
+rem ** hold6 **
+aiStrategy.createConstantCondition sixFriendlyCPCond Crisp Equal Friendly ControlPoint 6
 aiStrategy.setConditionStrength Required
 
 rem ** hold5 **
 aiStrategy.createConstantCondition fiveFriendlyCPCond Crisp Equal Friendly ControlPoint 5
 aiStrategy.setConditionStrength Required
 
-rem ** hold6 **
-aiStrategy.createConstantCondition sixFriendlyCPCond Crisp EqualGreater Friendly ControlPoint 6
+rem ** holdMax4 **
+aiStrategy.createConstantCondition maxFourFriendlyCPCond Crisp EqualSmaller Friendly ControlPoint 4
 aiStrategy.setConditionStrength Required
 
-rem ** axisattack **
-aiStrategy.createConstantCondition threeFriendlyCPCond Crisp EqualSmaller Friendly ControlPoint 3
+rem ** holdMin2 **
+aiStrategy.createConstantCondition minTwoFriendlyCPCond Crisp EqualGreater Friendly ControlPoint 2
+aiStrategy.setConditionStrength Required
+
+rem ** hold0 **
+aiStrategy.createConstantCondition zeroFriendlyCPCond Crisp Equal Friendly ControlPoint 0
+aiStrategy.setConditionStrength Required
+
+rem ** hold0South **
+aiStrategy.createConstantCondition zeroFriendlySouthCond Crisp Equal Friendly South 0
 aiStrategy.setConditionStrength Required
