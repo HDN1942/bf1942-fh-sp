@@ -1,92 +1,49 @@
-rem *** Create vehicle groups ***
-aiSettings.createVehicleGroup land
-aiSettings.createVehicleGroup any
-aiSettings.createVehicleGroup infantry
-
-rem *** Add vehicles to the groups ***
-aiSettings.addVehicleToVehicleGroup 0 land
-aiSettings.addVehicleToVehicleGroup 1 any
-aiSettings.addVehicleToVehicleGroup 2 any
-aiSettings.addVehicleToVehicleGroup 3 infantry
-aiSettings.addVehicleToVehicleGroup 4 any
-aiSettings.addVehicleToVehicleGroup 5 land
-aiSettings.addVehicleToVehicleGroup 6 land
-aiSettings.addVehicleToVehicleGroup 7 any
-aiSettings.addVehicleToVehicleGroup 8 any
-aiSettings.addVehicleToVehicleGroup 9 any
-aiSettings.addVehicleToVehicleGroup 10 any
-aiSettings.addVehicleToVehicleGroup 11 any
-aiSettings.addVehicleToVehicleGroup 12 any
-aiSettings.addVehicleToVehicleGroup 13 land
-aiSettings.addVehicleToVehicleGroup 14 land
-aiSettings.addVehicleToVehicleGroup 15 any
-aiSettings.addVehicleToVehicleGroup 16 land
-aiSettings.addVehicleToVehicleGroup 17 any
-aiSettings.addVehicleToVehicleGroup 18 any
-aiSettings.addVehicleToVehicleGroup 19 land
-aiSettings.addVehicleToVehicleGroup 20 any
-
-rem *** Create strategic areas ***
+waswrem *** Create strategic areas ***
 aiStrategicArea.create German_Bunkers 1513/1561 1550/1598 200
 
-aiStrategicArea.create Radarbunker 1602/1351 1616/1365 200
+aiStrategicArea.create Radarbunker 1593/1342 1616/1365 200
 
 aiStrategicArea.create CenterApproach 1507/1241 1517/1251 25
 
-aiStrategicArea.create House 1382/1253 1395/1266 200
+aiStrategicArea.create House 1359/1253 1382/1276 200
 
 aiStrategicArea.create WestApproach 1343/1198 1353/1208 25
 
-aiStrategicArea.create 2nd_Defenseline 1489/1106 1504/1121 200
+aiStrategicArea.create 2nd_Defenseline 1481/1105 1504/1128 200
 
 aiStrategicArea.create Frontline 1381/909 1421/949 200
 
 aiStrategicArea.create The_Beach 1268/554 1309/580 100
 
 aiStrategicArea.setActive German_Bunkers
-AIStrategicArea.addAllowedVehicleGroup land
-AIStrategicArea.addAllowedVehicleGroup any
-AIStrategicArea.addAllowedVehicleGroup infantry
 AIStrategicArea.addNeighbour Radarbunker
 AIStrategicArea.addNeighbour House
 AIStrategicArea.addNeighbour CenterApproach
 AIStrategicArea.addNeighbour WestApproach
 aiStrategicArea.addObjectTypeFlag Base
 aiStrategicArea.addObjectTypeFlag ControlPoint
-AIStrategicArea.setOrderPosition Tank 1527/1595
-AIStrategicArea.setOrderPosition Infantry 1566/1600
 aiStrategicArea.setSide 1
 aiStrategicArea.vehicleSearchRadius 140.0
 
 aiStrategicArea.setActive Radarbunker
-AIStrategicArea.addAllowedVehicleGroup any
-AIStrategicArea.addAllowedVehicleGroup infantry
 AIStrategicArea.addNeighbour German_Bunkers
 AIStrategicArea.addNeighbour CenterApproach
 AIStrategicArea.addNeighbour House
 AIStrategicArea.addNeighbour 2nd_Defenseline
 aiStrategicArea.addObjectTypeFlag ControlPoint
-AIStrategicArea.setOrderPosition Infantry 1621/1363
 aiStrategicArea.setSide 1
 aiStrategicArea.vehicleSearchRadius 40.0
 
 aiStrategicArea.setActive CenterApproach
-AIStrategicArea.addAllowedVehicleGroup land
-AIStrategicArea.addAllowedVehicleGroup any
-AIStrategicArea.addAllowedVehicleGroup infantry
 AIStrategicArea.addNeighbour German_Bunkers
 AIStrategicArea.addNeighbour Radarbunker
 AIStrategicArea.addNeighbour House
 AIStrategicArea.addNeighbour WestApproach
 AIStrategicArea.addNeighbour 2nd_Defenseline
 aiStrategicArea.addObjectTypeFlag Route
-AIStrategicArea.setOrderPosition Tank 1507/1241
-AIStrategicArea.setOrderPosition Infantry 1507/1241
 aiStrategicArea.setSide 1
 
 aiStrategicArea.setActive House
-AIStrategicArea.addAllowedVehicleGroup any
-AIStrategicArea.addAllowedVehicleGroup infantry
 AIStrategicArea.addNeighbour German_Bunkers
 AIStrategicArea.addNeighbour Radarbunker
 AIStrategicArea.addNeighbour CenterApproach
@@ -94,58 +51,39 @@ AIStrategicArea.addNeighbour WestApproach
 AIStrategicArea.addNeighbour 2nd_Defenseline
 AIStrategicArea.addNeighbour Frontline
 aiStrategicArea.addObjectTypeFlag ControlPoint
-AIStrategicArea.setOrderPosition Infantry 1388/1266
 aiStrategicArea.setSide 1
 aiStrategicArea.vehicleSearchRadius 120.0
 
 aiStrategicArea.setActive WestApproach
-AIStrategicArea.addAllowedVehicleGroup land
-AIStrategicArea.addAllowedVehicleGroup any
-AIStrategicArea.addAllowedVehicleGroup infantry
 AIStrategicArea.addNeighbour German_Bunkers
 AIStrategicArea.addNeighbour House
 AIStrategicArea.addNeighbour CenterApproach
 AIStrategicArea.addNeighbour 2nd_Defenseline
 AIStrategicArea.addNeighbour Frontline
 aiStrategicArea.addObjectTypeFlag Route
-AIStrategicArea.setOrderPosition Tank 1343/1198
-AIStrategicArea.setOrderPosition Infantry 1343/1198
 aiStrategicArea.setSide 1
 
 aiStrategicArea.setActive 2nd_Defenseline
-AIStrategicArea.addAllowedVehicleGroup land
-AIStrategicArea.addAllowedVehicleGroup any
-AIStrategicArea.addAllowedVehicleGroup infantry
 AIStrategicArea.addNeighbour Radarbunker
 AIStrategicArea.addNeighbour House
 AIStrategicArea.addNeighbour CenterApproach
 AIStrategicArea.addNeighbour WestApproach
-AIStrategicArea.addNeighbour Frontline 
+AIStrategicArea.addNeighbour Frontline
 aiStrategicArea.addObjectTypeFlag ControlPoint
-AIStrategicArea.setOrderPosition Tank 1505/1129
-AIStrategicArea.setOrderPosition Infantry 1505/1129
 aiStrategicArea.setSide 1
 aiStrategicArea.vehicleSearchRadius 80.0
 
 aiStrategicArea.setActive Frontline
-AIStrategicArea.addAllowedVehicleGroup land
-AIStrategicArea.addAllowedVehicleGroup any
-AIStrategicArea.addAllowedVehicleGroup infantry
 AIStrategicArea.addNeighbour House
 AIStrategicArea.addNeighbour 2nd_Defenseline
 AIStrategicArea.addNeighbour WestApproach
 AIStrategicArea.addNeighbour The_Beach
 aiStrategicArea.addObjectTypeFlag ControlPoint
-AIStrategicArea.setOrderPosition Tank 1426/921
-AIStrategicArea.setOrderPosition Infantry 1426/921
 aiStrategicArea.setSide 0
+aiStrategicArea.setTakeable 1 0
 
 aiStrategicArea.setActive The_Beach
-AIStrategicArea.addAllowedVehicleGroup land
-AIStrategicArea.addAllowedVehicleGroup any
-AIStrategicArea.addAllowedVehicleGroup infantry
 aiStrategicArea.addObjectTypeFlag Base
-AIStrategicArea.setOrderPosition Tank 1356/701
-AIStrategicArea.setOrderPosition Infantry 1356/701
 aiStrategicArea.setSide 2
 aiStrategicArea.setTakeable 1 0
+aiStrategicArea.vehicleSearchRadius 80.0

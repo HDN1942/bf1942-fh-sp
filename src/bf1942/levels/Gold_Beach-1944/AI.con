@@ -32,10 +32,12 @@ run ai/conditions.con
 run ai/prerequisites.con
 run ai/Strategies.con
 
-ai.addSAIStrategy 1 defend
-ai.addSAIStrategy 1 retake
-ai.addSAIStrategy 1 breakOut
+ai.addSAIStrategy 1 axisDefend
+ai.addSAIStrategy 1 axisAttack1
+ai.addSAIStrategy 1 axisAttack2
+ai.addSAIStrategy 1 axisBreakOut
 
-ai.addSAIStrategy 2 single
-ai.addSAIStrategy 2 double
-ai.addSAIStrategy 2 holdAndCamp
+ai.addSAIStrategy 2 alliesInitial
+ai.addSAIStrategy 2 alliesAttack1
+ai.addSAIStrategy 2 alliesAttack2
+ai.addSAIStrategy 2 alliesHoldAndCamp

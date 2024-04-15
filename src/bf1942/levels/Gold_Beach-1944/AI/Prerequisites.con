@@ -2,21 +2,20 @@ rem *** Create Prerequisites ***
 
 rem *** Gold Beach ***
 
-aiStrategy.createPrerequisite defendPrereq
-aiStrategy.addCondition minFourFriendlyCPCond	 5.0
+aiStrategy.createPrerequisite axisDefendPrereq
+aiStrategy.addCondition fourFriendlyCPCond	    10.0
 
-aiStrategy.createPrerequisite retakePrereq
-aiStrategy.addCondition maxThreeFriendlyCPCond	 5.0
+aiStrategy.createPrerequisite axisAttackPrereq
+aiStrategy.addCondition minThreeFriendlyCPCond  10.0
 
-aiStrategy.createPrerequisite breakOutPrereq
-aiStrategy.addCondition noFriendlyCPCond		10.0
+aiStrategy.createPrerequisite axisBreakOutPrereq
+aiStrategy.addCondition zeroFriendlyCPCond	    20.0
 
-aiStrategy.createPrerequisite singlePrereq
-aiStrategy.addCondition maxFiveFriendlyCPCond	 5.0
-aiStrategy.addCondition oneFriendlyCPCond	 	 2.5
+aiStrategy.createPrerequisite alliesInitialPrereq
+aiStrategy.addCondition oneFriendlyCPCond	    10.0
 
-aiStrategy.createPrerequisite doublePrereq
-aiStrategy.addCondition maxFiveFriendlyCPCond	 5.0
+aiStrategy.createPrerequisite alliesAttackPrereq
+aiStrategy.addCondition minTwoFriendlyCPCond	10.0
 
-aiStrategy.createPrerequisite holdAndCampPrereq
-aiStrategy.addCondition sixFriendlyCPCond		10.0
+aiStrategy.createPrerequisite alliesHoldAndCampPrereq
+aiStrategy.addCondition sixFriendlyCPCond	    20.0

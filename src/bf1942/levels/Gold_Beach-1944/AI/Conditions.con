@@ -2,26 +2,26 @@ rem *** Create Conditions ***
 
 rem *** Gold Beach ***
 
-rem ** defend **
-aiStrategy.createConstantCondition minFourFriendlyCPCond Crisp EqualGreater Friendly ControlPoint 4
+rem ** axisDefendPrereq **
+aiStrategy.createConstantCondition fourFriendlyCPCond Crisp Equal Friendly ControlPoint 4
 aiStrategy.setConditionStrength Required
 
-rem ** retake **
-aiStrategy.createConstantCondition maxThreeFriendlyCPCond Crisp EqualSmaller Enemy ControlPoint 3
+rem ** axisAttackPrereq **
+aiStrategy.createConstantCondition minThreeFriendlyCPCond Crisp EqualSmaller Friendly ControlPoint 3
 aiStrategy.setConditionStrength Required
 
-rem ** breakOut **
-aiStrategy.createConstantCondition noFriendlyCPCond Crisp Equal Friendly ControlPoint 0
+rem ** axisBreakOutPrereq **
+aiStrategy.createConstantCondition zeroFriendlyCPCond Crisp Equal Friendly ControlPoint 0
 aiStrategy.setConditionStrength Required
 
-rem ** single **
+rem ** alliesInitialPrereq **
 aiStrategy.createConstantCondition oneFriendlyCPCond Crisp Equal Friendly ControlPoint 1
 aiStrategy.setConditionStrength Required
 
-rem ** single & double **
-aiStrategy.createConstantCondition maxFiveFriendlyCPCond Crisp EqualSmaller Enemy ControlPoint 5
+rem ** alliesAttackPrereq **
+aiStrategy.createConstantCondition minTwoFriendlyCPCond Crisp EqualGreater Friendly ControlPoint 2
 aiStrategy.setConditionStrength Required
 
-rem ** holdAndCamp **
+rem ** alliesHoldAndCampPrereq **
 aiStrategy.createConstantCondition sixFriendlyCPCond Crisp Equal Friendly ControlPoint 6
 aiStrategy.setConditionStrength Required

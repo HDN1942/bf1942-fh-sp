@@ -106,7 +106,7 @@ rem
 rem ***  ***
 rem
 Object.create house_spawnpoint_5
-Object.absolutePosition 1313.01/44.6664/1228.27
+Object.absolutePosition 1311.72/44.67/1227.53
 Object.rotation 169/0/0
 rem
 rem ***  ***
@@ -171,7 +171,7 @@ rem
 rem ***  ***
 rem
 Object.create front_spawnpoint_8
-Object.absolutePosition 1595.38/45.0764/939.739
+Object.absolutePosition 1599.32/44.60/938.87
 Object.rotation -41.25/0/0
 rem
 rem ***  ***

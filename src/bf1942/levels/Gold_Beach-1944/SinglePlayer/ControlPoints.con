@@ -12,11 +12,11 @@ Object.absolutePosition 1616.39/56.4184/1365.35
 
 rem *** house ***
 Object.create house
-Object.absolutePosition 1394.92/45.2781/1265.94
+Object.absolutePosition 1381.89/45.10/1275.88
 
 rem *** 2nd_line ***
 Object.create 2nd_line
-Object.absolutePosition 1503.66/39.3226/1121.1
+Object.absolutePosition 1503.51/40.24/1127.81
 
 rem *** front ***
 Object.create front
