@@ -1,0 +1,228 @@
+rem
+rem ***  ***
+rem
+Object.create beach_spawnpoint_1
+Object.absolutePosition 1318.56/11.7717/570.724
+rem
+rem ***  ***
+rem
+Object.create front_spawnpoint_1
+Object.absolutePosition 1518.11/41.3094/933.953
+Object.rotation -11.1562/0/0
+rem
+rem ***  ***
+rem
+Object.create 2ndline_spawnpoint_1
+Object.absolutePosition 1497.05/40.8549/1126.59
+Object.rotation -154.25/0/0
+rem
+rem ***  ***
+rem
+Object.create house_spawnpoint_1
+Object.absolutePosition 1393.87/45.5173/1273.85
+Object.rotation 81/0/0
+rem
+rem ***  ***
+rem
+Object.create beach_spawnpoint_2
+Object.absolutePosition 1370.64/10.873/557.916
+rem
+rem ***  ***
+rem
+Object.create beach_spawnpoint_3
+Object.absolutePosition 1275.1/12.1327/577.181
+Object.rotation 69.5/0/0
+rem
+rem ***  ***
+rem
+Object.create beach_spawnpoint_4
+Object.absolutePosition 1295.61/10.9472/563.725
+rem
+rem ***  ***
+rem
+Object.create beach_spawnpoint_5
+Object.absolutePosition 1352.7/10.2992/555.699
+rem
+rem ***  ***
+rem
+Object.create house_spawnpoint_2
+Object.absolutePosition 1387.67/45.1695/1262.54
+Object.rotation -100/0/0
+rem
+rem ***  ***
+rem
+Object.create front_spawnpoint_2
+Object.absolutePosition 1484.19/43.6491/928.205
+Object.rotation 35.9375/0/0
+rem
+rem ***  ***
+rem
+Object.create front_spawnpoint_3
+Object.absolutePosition 1344.54/37.4469/858.704
+Object.rotation -350.375/0/0
+rem
+rem ***  ***
+rem
+Object.create front_spawnpoint_4
+Object.absolutePosition 1468.12/43.181/921.276
+Object.rotation -60.4375/0/0
+rem
+rem ***  ***
+rem
+Object.create 2ndline_spawnpoint_2
+Object.absolutePosition 1520.51/39.1378/1111.72
+Object.rotation -167.469/0/8.96462e-006
+rem
+rem ***  ***
+rem
+Object.create 2ndline_spawnpoint_3
+Object.absolutePosition 1473.18/39.2109/1121.03
+Object.rotation -145/0/0
+rem
+rem ***  ***
+rem
+Object.create 2ndline_spawnpoint_4
+Object.absolutePosition 1508.62/41.0483/1126.32
+Object.rotation -179/0/0
+rem
+rem ***  ***
+rem
+Object.create 2ndline_spawnpoint_5
+Object.absolutePosition 1449.43/40.5581/1110.24
+Object.rotation 179.219/0/0
+rem
+rem ***  ***
+rem
+Object.create house_spawnpoint_3
+Object.absolutePosition 1375.42/44.8034/1265.93
+Object.rotation -3/0/0
+rem
+rem ***  ***
+rem
+Object.create house_spawnpoint_4
+Object.absolutePosition 1415.07/45.4366/1277
+Object.rotation -95.25/0/0
+rem
+rem ***  ***
+rem
+Object.create house_spawnpoint_5
+Object.absolutePosition 1313.01/44.6664/1228.27
+Object.rotation 169/0/0
+rem
+rem ***  ***
+rem
+Object.create bunkers_spawnpoint_1
+Object.absolutePosition 1523.65/57.5303/1541.59
+Object.rotation 59/0/0
+rem
+rem ***  ***
+rem
+Object.create bunkers_spawnpoint_2
+Object.absolutePosition 1540.17/56.6518/1527.2
+Object.rotation -345/0/0
+rem
+rem ***  ***
+rem
+Object.create pillboxes_spawnpoint_1
+Object.absolutePosition 1629.13/57.0583/1368.16
+Object.rotation 132.5/0/0
+rem
+rem ***  ***
+rem
+Object.create pillboxes_spawnpoint_2
+Object.absolutePosition 1632/55.2961/1356
+Object.rotation -180.75/0/0
+rem
+rem ***  ***
+rem
+Object.create pillboxes_spawnpoint_3
+Object.absolutePosition 1608/53.6391/1356
+Object.rotation -151.938/-0.03125/0
+rem
+rem ***  ***
+rem
+Object.create pillboxes_spawnpoint_4
+Object.absolutePosition 1621.72/54.8426/1358.07
+Object.rotation -179.75/0/0
+rem
+rem ***  ***
+rem
+Object.create pillboxes_spawnpoint_5
+Object.absolutePosition 1614.26/54.9362/1360.71
+rem
+rem ***  ***
+rem
+Object.create front_spawnpoint_5
+Object.absolutePosition 1370.21/37.1836/866.009
+Object.rotation -8/0/0
+rem
+rem ***  ***
+rem
+Object.create front_spawnpoint_6
+Object.absolutePosition 1557.74/44.0328/943.097
+Object.rotation -18.75/0/0
+rem
+rem ***  ***
+rem
+Object.create front_spawnpoint_7
+Object.absolutePosition 1575.93/44.0039/942.773
+Object.rotation -11.75/0/0
+rem
+rem ***  ***
+rem
+Object.create front_spawnpoint_8
+Object.absolutePosition 1595.38/45.0764/939.739
+Object.rotation -41.25/0/0
+rem
+rem ***  ***
+rem
+Object.create front_spawnpoint_9
+Object.absolutePosition 1415.47/37.0711/857.724
+rem
+rem ***  ***
+rem
+Object.create front_spawnpoint_10
+Object.absolutePosition 1477.69/43.4867/922.119
+Object.rotation -25/0/0
+rem
+rem ***  ***
+rem
+Object.create bunkers_spawnpoint_3
+Object.absolutePosition 1624.64/56.6866/1555.7
+Object.rotation -168.25/0/0
+rem
+rem ***  ***
+rem
+Object.create bunkers_spawnpoint_4
+Object.absolutePosition 1570.61/53.5753/1613.03
+Object.rotation -183.75/0/0
+rem
+rem ***  ***
+rem
+Object.create bunkers_spawnpoint_5
+Object.absolutePosition 1600.68/54.2818/1552.96
+Object.rotation 125.5/0/0
+rem
+rem ***  ***
+rem
+Object.create bunkers_spawnpoint_6
+Object.absolutePosition 1457.57/51.5561/1594.42
+Object.rotation -173.25/0/0
+rem
+rem ***  ***
+rem
+Object.create bunkers_spawnpoint_7
+Object.absolutePosition 1479.78/57.2527/1630.91
+Object.rotation -214.75/0/0
+rem
+rem ***  ***
+rem
+Object.create bunkers_spawnpoint_8
+Object.absolutePosition 1539.91/52.8417/1602.61
+Object.rotation -10.5/0/0
+rem
+rem ***  ***
+rem
+Object.create bunkers_spawnpoint_9
+Object.absolutePosition 1561.59/55.752/1657.48
+Object.rotation -209.469/0/0

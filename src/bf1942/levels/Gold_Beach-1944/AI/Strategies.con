@@ -1,0 +1,61 @@
+rem *** Create Strategies ***
+
+rem *** Gold Beach ***
+
+rem ** German **
+
+aiStrategy.createStrategy defend
+aiStrategy.Aggression 0.35
+aiStrategy.NumberOfAttacks 1
+aiStrategy.NumberOfDefences 2
+aiStrategy.setTreeModifier TTNDefensivePos 1.25
+aiStrategy.setTreeModifier TTNFriendGroundFixed 1.5
+aiStrategy.setPrerequisite defendPrereq
+aiStrategy.setStrategicObjectsModifier Front		 2.0
+
+aiStrategy.createStrategy retake
+aiStrategy.Aggression 0.9
+aiStrategy.NumberOfAttacks 2
+aiStrategy.NumberOfDefences 1
+aiStrategy.setTreeModifier TTNFriendGroundFixed 1.25
+aiStrategy.setPrerequisite retakePrereq
+aiStrategy.setStrategicObjectsModifier ControlPoint  2.0 Neutral
+aiStrategy.setStrategicObjectsModifier ControlPoint  2.0 Hostile
+
+aiStrategy.createStrategy breakOut
+aiStrategy.Aggression 1.0
+aiStrategy.NumberOfAttacks 3
+aiStrategy.NumberOfDefences 0
+aiStrategy.setPrerequisite breakOutPrereq
+aiStrategy.setStrategicObjectsModifier ControlPoint  4.0
+
+rem ** British **
+
+aiStrategy.createStrategy single
+aiStrategy.Aggression 1.0
+aiStrategy.NumberOfAttacks 1
+aiStrategy.NumberOfDefences 0
+aiStrategy.TimeLimit 200
+aiStrategy.setTreeModifier TTNFriendGroundFixed 0.65
+aiStrategy.setPrerequisite singlePrereq
+aiStrategy.setStrategicObjectsModifier ControlPoint  2.0 Neutral
+aiStrategy.setStrategicObjectsModifier ControlPoint  2.0 Hostile
+aiStrategy.setStrategicObjectsModifier Safe          0.5 Owned
+
+aiStrategy.createStrategy double
+aiStrategy.Aggression 1.0
+aiStrategy.NumberOfAttacks 2
+aiStrategy.NumberOfDefences 0
+aiStrategy.TimeLimit 200
+aiStrategy.setTreeModifier TTNFriendGroundFixed 0.65
+aiStrategy.setPrerequisite doublePrereq
+aiStrategy.setStrategicObjectsModifier ControlPoint  2.0 Neutral
+aiStrategy.setStrategicObjectsModifier ControlPoint  2.0 Hostile
+aiStrategy.setStrategicObjectsModifier Safe          0.5 Owned
+
+aiStrategy.createStrategy holdAndCamp
+aiStrategy.Aggression 0.25
+aiStrategy.NumberOfAttacks 1
+aiStrategy.NumberOfDefences 3
+aiStrategy.setPrerequisite holdAndCampPrereq
+aiStrategy.setStrategicObjectsModifier ControlPoint  2.0 Owned

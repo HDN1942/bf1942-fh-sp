@@ -1,0 +1,41 @@
+
+rem ************** LEVEL SPECIFIC AI SETTINGS ***************************
+
+aiSettings.setWorldMapSize 2048 2048
+aiSettings.viewDistance 240
+aiSettings.setInformationGridDimension 32
+
+rem ********************** START THE AI *********************************
+
+rem *** Init AI using current settings ****
+ai.init 2
+
+
+rem *** Strategic map dimension, MUST BE DONE BEFORE CREATING SAI! ***
+ai.saiMapXDimension 64
+ai.saiMapYDimension 64
+
+rem *** Create Strategic AI ***
+ai.createSAI
+
+
+rem *** Enabled or disabled as default ***
+ai.saiEnable 1
+game.showAIstats 0
+
+run AIPathFinding.con
+run AI/StrategicAreas.con
+
+rem *** Set strategies for each side ***
+
+run ai/conditions.con
+run ai/prerequisites.con
+run ai/Strategies.con
+
+ai.addSAIStrategy 1 defend
+ai.addSAIStrategy 1 retake
+ai.addSAIStrategy 1 breakOut
+
+ai.addSAIStrategy 2 single
+ai.addSAIStrategy 2 double
+ai.addSAIStrategy 2 holdAndCamp

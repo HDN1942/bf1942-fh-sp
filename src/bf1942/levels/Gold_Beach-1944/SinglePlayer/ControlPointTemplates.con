@@ -1,0 +1,132 @@
+NetworkableInfo.createNewInfo ControlPointInfo
+NetworkableInfo.setPredictionMode PMNone
+NetworkableInfo.setBasePriority c_NIGhostAlways
+
+ObjectTemplate.create ControlPoint axis_bunkers
+ObjectTemplate.networkableInfo ControlPointInfo
+ObjectTemplate.setControlPointName German_Bunkers
+ObjectTemplate.radius 45
+ObjectTemplate.team 1
+ObjectTemplate.spawnGroupId 6
+ObjectTemplate.objectSpawnerId 6
+ObjectTemplate.timeToGetControl 30
+ObjectTemplate.timeToLoseControl 30
+ObjectTemplate.geometry flagbase_m1
+ObjectTemplate.areaValue 25
+ObjectTemplate.disableIfEnemyInsideRadius 0
+ObjectTemplate.disableWhenLosingControl 0
+ObjectTemplate.loseControlWhenEnemyClose 1
+ObjectTemplate.loseControlWhenNotClose 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.addTemplate AnimatedFlag
+ObjectTemplate.setPosition 0/8.2/0
+ObjectTemplate.setTeamGeometry 1 flagge_m1
+ObjectTemplate.setTeamGeometry 2 flaguk_m1
+
+ObjectTemplate.create ControlPoint radarbunker
+ObjectTemplate.networkableInfo ControlPointInfo
+ObjectTemplate.setControlPointName Radarbunker
+ObjectTemplate.radius 16
+ObjectTemplate.team 1
+ObjectTemplate.spawnGroupId 5
+ObjectTemplate.objectSpawnerId 5
+ObjectTemplate.timeToGetControl 20
+ObjectTemplate.timeToLoseControl 15
+ObjectTemplate.geometry flagbase_m1
+ObjectTemplate.areaValue 25
+ObjectTemplate.disableIfEnemyInsideRadius 0
+ObjectTemplate.disableWhenLosingControl 0
+ObjectTemplate.loseControlWhenEnemyClose 1
+ObjectTemplate.loseControlWhenNotClose 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.addTemplate AnimatedFlag
+ObjectTemplate.setPosition 0/8.2/0
+ObjectTemplate.setTeamGeometry 1 flagge_m1
+ObjectTemplate.setTeamGeometry 2 flaguk_m1
+
+ObjectTemplate.create ControlPoint front
+ObjectTemplate.networkableInfo ControlPointInfo
+ObjectTemplate.setControlPointName Frontline
+ObjectTemplate.radius 50
+ObjectTemplate.team 0
+ObjectTemplate.spawnGroupId 2
+ObjectTemplate.objectSpawnerId 2
+ObjectTemplate.timeToGetControl 10
+ObjectTemplate.timeToLoseControl 10
+ObjectTemplate.onlyTakeableByTeam 2
+ObjectTemplate.geometry flagbase_m1
+ObjectTemplate.areaValue 0
+ObjectTemplate.disableIfEnemyInsideRadius 0
+ObjectTemplate.disableWhenLosingControl 0
+ObjectTemplate.loseControlWhenEnemyClose 1
+ObjectTemplate.loseControlWhenNotClose 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.addTemplate AnimatedFlag
+ObjectTemplate.setPosition 0/8.2/0
+ObjectTemplate.setTeamGeometry 1 flagge_m1
+ObjectTemplate.setTeamGeometry 2 flaguk_m1
+
+ObjectTemplate.create ControlPoint 2nd_line
+ObjectTemplate.networkableInfo ControlPointInfo
+ObjectTemplate.setControlPointName 2nd_Defenceline
+ObjectTemplate.radius 20
+ObjectTemplate.team 1
+ObjectTemplate.spawnGroupId 3
+ObjectTemplate.objectSpawnerId 3
+ObjectTemplate.timeToGetControl 20
+ObjectTemplate.timeToLoseControl 10
+ObjectTemplate.geometry flagbase_m1
+ObjectTemplate.areaValue 25
+ObjectTemplate.disableIfEnemyInsideRadius 0
+ObjectTemplate.disableWhenLosingControl 0
+ObjectTemplate.loseControlWhenEnemyClose 1
+ObjectTemplate.loseControlWhenNotClose 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.addTemplate AnimatedFlag
+ObjectTemplate.setPosition 0/8.2/0
+ObjectTemplate.setTeamGeometry 1 flagge_m1
+ObjectTemplate.setTeamGeometry 2 flaguk_m1
+
+ObjectTemplate.create ControlPoint house
+ObjectTemplate.networkableInfo ControlPointInfo
+ObjectTemplate.setControlPointName House
+ObjectTemplate.radius 15
+ObjectTemplate.team 1
+ObjectTemplate.spawnGroupId 4
+ObjectTemplate.objectSpawnerId 4
+ObjectTemplate.timeToGetControl 20
+ObjectTemplate.timeToLoseControl 10
+ObjectTemplate.geometry flagbase_m1
+ObjectTemplate.areaValue 25
+ObjectTemplate.disableIfEnemyInsideRadius 0
+ObjectTemplate.disableWhenLosingControl 0
+ObjectTemplate.loseControlWhenEnemyClose 1
+ObjectTemplate.loseControlWhenNotClose 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.addTemplate AnimatedFlag
+ObjectTemplate.setPosition 0/8.2/0
+ObjectTemplate.setTeamGeometry 1 flagge_m1
+ObjectTemplate.setTeamGeometry 2 flaguk_m1
+
+ObjectTemplate.create ControlPoint beach
+ObjectTemplate.networkableInfo ControlPointInfo
+ObjectTemplate.setControlPointName The_Beach
+ObjectTemplate.radius 5
+ObjectTemplate.team 2
+ObjectTemplate.spawnGroupId 1
+ObjectTemplate.objectSpawnerId 1
+ObjectTemplate.timeToGetControl 9999
+ObjectTemplate.timeToLoseControl 9999
+ObjectTemplate.unableToChangeTeam 1
+ObjectTemplate.geometry flagbase_m1
+ObjectTemplate.areaValue 0
+ObjectTemplate.disableIfEnemyInsideRadius 0
+ObjectTemplate.disableWhenLosingControl 0
+ObjectTemplate.loseControlWhenEnemyClose 1
+ObjectTemplate.loseControlWhenNotClose 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.addTemplate AnimatedFlag
+ObjectTemplate.setPosition 0/8.2/0
+ObjectTemplate.setTeamGeometry 1 flagge_m1
+ObjectTemplate.setTeamGeometry 2 flaguk_m1
+

@@ -1,0 +1,24 @@
+rem *** beach ***
+Object.create beach
+Object.absolutePosition 1302.95/11.8313/572.254
+
+rem *** axis_bunkers ***
+Object.create axis_bunkers
+Object.absolutePosition 1549.922/52.67304/1598.307
+
+rem *** radarbunker ***
+Object.create radarbunker
+Object.absolutePosition 1616.39/56.4184/1365.35
+
+rem *** house ***
+Object.create house
+Object.absolutePosition 1394.92/45.2781/1265.94
+
+rem *** 2nd_line ***
+Object.create 2nd_line
+Object.absolutePosition 1503.66/39.3226/1121.1
+
+rem *** front ***
+Object.create front
+Object.absolutePosition 1421.386/39.32507/949.4841
+
